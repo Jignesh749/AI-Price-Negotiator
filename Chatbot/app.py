@@ -11,9 +11,9 @@ CORS(app, resources={r"/*": {"origins": "*"}})  # Allow CORS for all routess
 
 
 try:
-    client = MongoClient('mongodb+srv://vaghelajigneshcan0205:123Durham@cluster0.liiiog9.mongodb.net/')
-    db = client['ProductDB']
-    products_collection = db['Products']
+    client = "Your MongoDB client link"
+    db = client['DatabaseName']
+    products_collection = db['YourCollectionsName']
     print("MongoDB connection successful.")
 except Exception as e:
     print(f"Error connecting to MongoDB: {e}")
